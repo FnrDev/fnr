@@ -49,6 +49,18 @@ class validation {
         if (url.match(urlRegex)) return true;
         return false;
     };
+    /**
+     * 
+     * @param {string} url 
+     * @returns true if image url is image or false if not
+     */
+    isImage(url) {
+        if (!url) return new TypeError('Missing image url to vaildation.');
+        if (typeof url !== 'string') return new TypeError(`Image url must be a string. received ${typeof date}`);
+        const imgRegex = /(http[s]*:\/\/)([a-z\-_0-9\/.]+)\.([a-z.]{2,3})\/([a-z0-9\-_\/._~:?#\[\]@!$&'()*+,;=%]*)([a-z0-9]+\.)(jpg|jpeg|png)/i;
+        if (url.match(imgRegex)) return true;
+        return false;
+    };
 }
 
 module.exports = validation;
