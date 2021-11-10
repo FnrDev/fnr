@@ -23,6 +23,7 @@ const validation = new fnr.validation();
 const isEmail = validation.isEmail('me@fnrr.dev');
 const isPhoneNumber = validation.isPhoneNumber('+31636363634');
 const isDate = validation.isDate('12/5/2021');
+
 console.log(isEmail); // true
 console.log(isPhoneNumber); // true
 console.log(isDate); // true
