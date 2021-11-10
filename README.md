@@ -29,6 +29,6 @@ const isImage = validation.isImage('https://probot.io/static/logo1.jpg');
 console.log(isEmail); // true
 console.log(isPhoneNumber); // true
 console.log(isDate); // true
-console.log(isURL) // true
-console.log(isImage) // true
+console.log(isURL); // true
+console.log(isImage); // true
 ```
