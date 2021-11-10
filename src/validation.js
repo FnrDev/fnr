@@ -36,7 +36,19 @@ class validation {
         const dateRegex = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
         if (date.match(dateRegex)) return true;
         return false;
-    }
+    };
+    /**
+     * 
+     * @param {string} url 
+     * @returns true if is vaild url false if not
+     */
+    isURL(url) {
+        if (!url) return new TypeError('Missing url to vaildation.');
+        if (typeof url !== 'string') return new TypeError(`Url must be a string. received ${typeof date}`);
+        const urlRegex = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi;
+        if (url.match(urlRegex)) return true;
+        return false;
+    };
 }
 
 module.exports = validation;
