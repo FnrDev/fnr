@@ -1,0 +1,16 @@
+{
+  "name": "fnr",
+  "version": "1.0.0",
+  "description": "Fnr utility for regex and more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "regex",
+    "isEmail",
+    "validation"
+  ],
+  "author": "FnrDev",
+  "license": "ISC"
+}
