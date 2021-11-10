@@ -1,6 +1,6 @@
 {
   "name": "fnr",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "Fnr utility for regex and more",
   "main": "index.js",
   "scripts": {
