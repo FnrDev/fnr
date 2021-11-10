@@ -1,4 +1,4 @@
-# weather-api-data
+# Fnr
 
 <center>
 	<a href="https://www.npmjs.com/package/fnr">
