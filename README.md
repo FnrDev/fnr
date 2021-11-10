@@ -14,7 +14,7 @@
 npm install fnr
 ```
 
-## example
+## Examples
 
 ```js
 const fnr = require('fnr');
