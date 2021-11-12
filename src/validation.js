@@ -1,3 +1,5 @@
+'use strict';
+
 class validation {
     /**
      * @param {string} email 
@@ -44,7 +46,7 @@ class validation {
      */
     isURL(url) {
         if (!url) return new TypeError('Missing url to vaildation.');
-        if (typeof url !== 'string') return new TypeError(`Url must be a string. received ${typeof date}`);
+        if (typeof url !== 'string') return new TypeError(`Url must be a string. received ${typeof url}`);
         const urlRegex = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi;
         if (url.match(urlRegex)) return true;
         return false;
@@ -56,7 +58,7 @@ class validation {
      */
     isImage(url) {
         if (!url) return new TypeError('Missing image url to vaildation.');
-        if (typeof url !== 'string') return new TypeError(`Image url must be a string. received ${typeof date}`);
+        if (typeof url !== 'string') return new TypeError(`Image url must be a string. received ${typeof url}`);
         const imgRegex = /(http[s]*:\/\/)([a-z\-_0-9\/.]+)\.([a-z.]{2,3})\/([a-z0-9\-_\/._~:?#\[\]@!$&'()*+,;=%]*)([a-z0-9]+\.)(jpg|jpeg|png)/i;
         if (url.match(imgRegex)) return true;
         return false;

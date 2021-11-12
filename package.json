@@ -2,7 +2,7 @@
   "name": "fnr",
   "version": "2.0.2",
   "description": "Fnr utility for regex and more",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
