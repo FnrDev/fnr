@@ -13,7 +13,8 @@
   "keywords": [
     "regex",
     "isEmail",
-    "validation"
+    "validation",
+    "short-url"
   ],
   "author": "FnrDev",
   "license": "ISC",
