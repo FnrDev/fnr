@@ -34,6 +34,7 @@ console.log(isImage); // true
 ```
 
 ## Others
+```js
 const fnr = require('fnr');
 const shortClient = new fnr.shortURL('GET_YOUR_KEY_FROM_https://i8.ae/user/tools/api');
 
@@ -43,6 +44,7 @@ async function shortURL(url) {
 }
 
 shortURL('https://probot.io'); // And you will get output like that [#output]
+```
 
 ## Output
 ```js
