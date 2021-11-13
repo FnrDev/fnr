@@ -43,7 +43,7 @@ async function shortURL(url) {
     console.log(e);
 }
 
-shortURL('https://probot.io'); // And you will get output like that [#output]
+shortURL('https://probot.io');
 ```
 
 ## Output
