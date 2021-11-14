@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/FnrDev/fnr"
   },
+  "bugs": {
+    "url": "https://github.com/FnrDev/fnr/issues"
+  },
   "keywords": [
     "regex",
     "isEmail",
