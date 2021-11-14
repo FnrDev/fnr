@@ -16,7 +16,6 @@ class validation {
         return false;
     };
     /**
-     * 
      * @param {string} number 
      * @returns true if is vaild phone number false if not
      */
@@ -28,7 +27,6 @@ class validation {
         return false;
     };
     /**
-     * 
      * @param {string} date 
      * @returns true if is vaild date false if not
      */
@@ -40,7 +38,6 @@ class validation {
         return false;
     };
     /**
-     * 
      * @param {string} url 
      * @returns true if is vaild url false if not
      */
@@ -52,7 +49,6 @@ class validation {
         return false;
     };
     /**
-     * 
      * @param {string} url 
      * @returns true if image url is image or false if not
      */

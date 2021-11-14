@@ -7,7 +7,7 @@ class shortURL {
      * @param {string} key
      */
     constructor(key) {
-        if (!key) throw new Error('Missing api key, check https://i8.ae/user/tools/api to get key.');
+        if (!key) throw new Error('Missing api key, check https://app.bitly.com/settings/api/ to get key.');
         this.key = key;
     }
     /**
@@ -23,13 +23,13 @@ class shortURL {
         if (!vaildation.isURL(url)) return new TypeError('You need a vaild url to short.');
         try {
             const req = await axios({
-                url: "https://i8.ae/api/url/add",
+                url: "https://api-ssl.bitly.com/v4/shorten",
                 method: "POST",
                 headers: {
-                    Authorization: this.key
+                    Authorization: `Bearer ${this.key}`
                 },
                 data: {
-                    url: url
+                    long_url: url
                 }
             });
             return req.data;
