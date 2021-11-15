@@ -1,6 +1,6 @@
 {
   "name": "fnr",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "NPM package that validation phone numbers & emails & dates and many more ...",
   "main": "./src/index.js",
   "scripts": {
