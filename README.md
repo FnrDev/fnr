@@ -25,12 +25,14 @@ const isPhoneNumber = validation.isPhoneNumber('+31636363634');
 const isDate = validation.isDate('12/5/2021');
 const isURL = validation.isURL('https://youtube.com');
 const isImage = validation.isImage('https://probot.io/static/logo1.jpg');
+const isHexColor = validation.isHexColor('#ff0000');
 
 console.log(isEmail); // true
 console.log(isPhoneNumber); // true
 console.log(isDate); // true
 console.log(isURL); // true
 console.log(isImage); // true
+console.log(isHexColor); // true
 ```
 
 ## Others

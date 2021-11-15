@@ -59,6 +59,17 @@ class validation {
         if (url.match(imgRegex)) return true;
         return false;
     };
+    /**
+     * @param {string} hex 
+     * @returns true if is hex color false if not.
+     */
+    isHexColor(hex) {
+        if (!hex) return new TypeError('Missing hex code to vaildation.');
+        if (typeof hex !== 'string') return new TypeError(`Hex code must be a string. received ${typeof hex}`);
+        const hexRegex = /^#([0-9a-f]{6}|[0-9a-f]{3})$/i;
+        if (hex.match(hexRegex)) return true;
+        return false;
+    }
 }
 
 module.exports = validation;
