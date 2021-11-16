@@ -14,7 +14,17 @@ class shortURL {
      * @param {string} url 
      * @returns
      * ```js
-     * { error: 0, short: "https://i8.ae/OeBnD" }
+     * {
+*       created_at: '2021-11-14T14:35:44+0000',
+        id: 'bit.ly/31Q14jw',
+        link: 'https://bit.ly/31Q14jw',
+        custom_bitlinks: [],
+        long_url: 'https://probot.io/',
+        archived: false,
+        tags: [],
+        deeplinks: [],
+        references: { group: 'https://api-ssl.bitly.com/v4/groups/Bk98d0JwFyp' }
+     * }
      * ```
      */
     async short(url) {
