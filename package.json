@@ -17,7 +17,8 @@
     "regex",
     "isEmail",
     "validation",
-    "short-url"
+    "short-url",
+    "isIP"
   ],
   "author": "FnrDev",
   "license": "MIT",
