@@ -1,6 +1,6 @@
 {
   "name": "fnr",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "NPM package that validation phone numbers & emails & dates and many more ...",
   "main": "./src/index.js",
   "scripts": {
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/FnrDev/fnr.git"
+  },
+  "publishConfig": {
+    "@FnrDev:registry": "https://npm.pkg.github.com"
   },
   "bugs": {
     "url": "https://github.com/FnrDev/fnr/issues"
